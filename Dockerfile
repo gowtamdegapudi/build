@@ -1,6 +1,7 @@
-FROM ubuntu
-MAINTAINER gowtamdegapudi17@gmail.com
+FROM alpine:3.4
 
-RUN apt-get update
-RUN apt-get install -y ngnix
+RUN apk update
+RUN apk add curl
+RUN apk add vim
+RUN apk add git
 CMD ["echo","image created"]
